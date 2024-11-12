@@ -12,11 +12,15 @@ After that you are ready to start chatting!
 Features:
 
 - Simple chat interface
-- Optionally let AI see your monitor contens (thus the name The Eye)
-- Pick + Append a file from your PC
+- Optionally let AI see your screen (thus the name The Eye)
+- Pick + Append a file from your PC to chat with
+- Powered by Gemini flash LLM
 - "Memory" (Beta): AI can utilize and read/write to memory (stored in local SQlite database). You can tell it to save certain things and they will be recalled when you start the conversation
 - Ability to read a file (any) from your desktop and write (text files) to desktop directory (For your own needs you can add custom tools in tool.go file)
+- Ability to chain tool calls (Read from file X and copy to file Y calls tools and executes one by one in logic steps)
 
+## Installation
+There is no installation, simply donwload/unzip and run the executable. Optionally build from source with "fyne package" command.
 
 
 ![384722723-c813c20c-6814-4553-9a58-cfa1fb4722df (1)](https://github.com/user-attachments/assets/0892998c-fa2f-4d85-bf66-5aac9f0f7fb5)

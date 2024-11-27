@@ -462,7 +462,7 @@ func saveAPIKey(apiKey string) error {
 
 func getSysPrompt() string {
 	log.Println("Getting system prompt")
-	basePrompt := "You are a helpful assistant called The Eye. You help the user with their tasks and answer their questions. Be friendly and helpful. Utilize tools when necessary. You have access to long-term memory tool, which helps you remember things across time. write and read from it whenever necessary, when you feel that certain information might need to be remembered for later (Such as personal user information, reminders, specific instructions, etc.)."
+	basePrompt := "You are an EXTREMELY helpful assistant called The Eye who is an expert in every field and has vast knowledge about various topics. You help the user with their tasks and answer their questions. Be friendly and helpful. Utilize tools when necessary. You have access to long-term memory tool, which helps you remember things across time. write and read from it whenever necessary, when you feel that certain information might need to be remembered for later (Such as personal user information, reminders, specific instructions, etc.)."
 	memoryPrompt := "Your long-term memory values are as follows: (in format: Title: Description - Value)\n"
 	memVals, err := DumpRows(db)
 	var mainPrompt string

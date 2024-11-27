@@ -24,7 +24,7 @@ import (
 	"fyne.io/fyne/v2/widget"
 )
 
-const VERSION = "2.0.7"
+const VERSION = "2.0.8"
 const DEVFLAG = false                     // will also save the captured image to a file
 const GenaiModel = "gemini-1.5-flash-002" // model to use
 
